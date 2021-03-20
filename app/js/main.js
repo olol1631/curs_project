@@ -26,10 +26,14 @@ $(document).ready(function(){
         $('.menu__burger,.menu__list').toggleClass('active');
         $('body').toggleClass('lock');
     });
-
+//спойлеры
     $('.product__filter-title').click(function(event){
         $(this).toggleClass('active').next().slideToggle(300);
     })
+
+    $('.header__bottom-searchmobile').click(function(event){
+      $(this).next().slideToggle(300);
+  })
 
     //slider
     new Swiper('.banner-container', {
